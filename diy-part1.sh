@@ -17,8 +17,8 @@
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-echo 'src-git openlist https://github.com/sbwml/luci-app-openlist2' >>feeds.conf.default
-echo 'src-git luci-app-syncthing https://github.com/danchexiaoyang/luci-app-syncthing' >>feeds.conf.default
-echo 'src-git luci-app-diskman https://github.com/lisaac/luci-app-diskman' >>feeds.conf.default
-echo 'src-git luci-theme-argon https://github.com/jerrykuku/luci-theme-argon' >>feeds.conf.default
+git clone https://github.com/sbwml/luci-app-openlist2.git package/openlist
+git clone https://github.com/danchexiaoyang/luci-app-syncthing.git package/luci-app-syncthing
+git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
