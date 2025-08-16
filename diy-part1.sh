@@ -19,6 +19,9 @@
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 git clone https://github.com/sbwml/luci-app-openlist2.git package/openlist
 git clone https://github.com/danchexiaoyang/luci-app-syncthing.git package/luci-app-syncthing
-git clone https://github.com/lisaac/luci-app-diskman.git package/luci-app-diskman
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+mkdir -p package/luci-app-diskman && \
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/applications/luci-app-diskman/Makefile -O package/luci-app-diskman/Makefile
+mkdir -p package/parted && \
+wget https://raw.githubusercontent.com/lisaac/luci-app-diskman/master/Parted.Makefile -O package/parted/Makefile
 
