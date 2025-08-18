@@ -18,12 +18,3 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
-
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
-
-sed -i "s/^PKG_VERSION:=.*/PKG_VERSION:=2.0.1/" feeds/packages/utils/syncthing/Makefile
-sed -i "s/^PKG_HASH:=.*/PKG_HASH:=skip/" feeds/packages/utils/syncthing/Makefile
-sed -i "s/option _no_default_folder '1'/option _no_default_folder '0'/" feeds/packages/utils/syncthing/files/syncthing.conf
-sed -i 's|IDX_DB=\$(readlink -n "\$home"/index-v0\.14\.0\.db)|IDX_DB=$(readlink -n "$home"/index-v2)|' feeds/packages/utils/syncthing/files/syncthing.init
-
