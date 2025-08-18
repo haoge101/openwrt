@@ -16,8 +16,4 @@
 # Add a feed source
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
-echo 'src-git op https://github.com/haoge101/op' >>feeds.conf.default
-git clone https://github.com/sbwml/luci-app-openlist2.git package/openlist
-git clone https://github.com/danchexiaoyang/luci-app-syncthing.git package/luci-app-syncthing
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+
