@@ -116,7 +116,7 @@ jobs:
         cd openwrt/bin/targets/*/*
         rm -rf packages
         # rm -f *ext4*
-        find . -type f ! -name '*efi*' -delete
+        find . -type f ! -name '*ext4*efi*' ! -name 'sha256sums*' ! -name '*.buildinfo' -delete
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
