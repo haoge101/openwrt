@@ -116,7 +116,7 @@ jobs:
         cd openwrt/bin/targets/*/*
         rm -rf packages
         # rm -f *squashfs*
-        find . -type f ! -name 'immortal-sunxi-cortexa7-xunlong_orangepi-zero-squashfs-sdcard.img.gz' ! -name 'sha256sums*' -delete
+        find . -type f ! -name 'immortalwrt-sunxi-cortexa7-xunlong_orangepi-zero-squashfs-sdcard.img.gz' ! -name 'sha256sums*' -delete
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
