@@ -51,7 +51,7 @@ LATEST=$(curl -s https://api.github.com/repos/syncthing/syncthing/releases/lates
   | sed -E 's/.*"v?([^"]+)".*/\1/')
 
 # 2. OpenWrt syncthing Makefile 路径
-MAKEFILE="feeds/packages/utils/syncthing/Makefile"
+MAKEFILE="feeds/packages/syncthing/Makefile"
 
 # 3. 替换 Makefile 中的 PKG_VERSION
 sed -i -E "s/^(PKG_VERSION:)=.*/\1 $LATEST/" "$MAKEFILE"
