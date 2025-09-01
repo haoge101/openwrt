@@ -49,7 +49,7 @@ git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatp
 LATEST=$(curl -s https://api.github.com/repos/syncthing/syncthing/releases/latest | grep '"tag_name":' | sed -E 's/.*"v?([^"]+)".*/\1/')
 
 # 2. OpenWrt syncthing Makefile 路径
-MAKEFILE="feeds/packages/utils/syncthing"
+MAKEFILE="feeds/packages/utils/syncthing/Makefile"
 
 # 3. 替换 Makefile 中的 PKG_VERSION
 sed -i -E "s/^(PKG_VERSION:)=.*/\1 $LATEST/" "$MAKEFILE"
