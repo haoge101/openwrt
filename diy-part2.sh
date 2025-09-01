@@ -36,7 +36,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
 rm -rf feeds/luci/applications/luci-app-diskman
 git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
 
-# 移除 openwrt feeds 过时的openList2版本
+# 更新openList2版本
 
 git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
 
