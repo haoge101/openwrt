@@ -15,5 +15,5 @@ sed -i -E "s/^(PKG_VERSION:)=.*/\1 $LATEST/" "$MAKEFILE"
 
 # 4. 显示PKG_VERSION
 # 提取 version
-VERSION=$(grep -E '^PKG_VERSION:=' "$MAKEFILE" | sed 's/PKG_VERSION:=//g' | tr -d '[:space:]')
+VERSION=$(grep -E '^PKG_VERSION:=' "$MAKEFILE")
 echo "Current version in Syncthing Makefile: $VERSION"
