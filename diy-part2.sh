@@ -28,8 +28,17 @@ git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/l
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 
-# 移除 openwrt feeds 过时的luci版本
+# 移除 openwrt feeds 过时的luci-app-passwall版本
 rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
+
+# 移除 openwrt feeds 过时的luci-app-diskman版本
+rm -rf feeds/luci/applications/luci-app-diskman
+git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
+
+# 移除 openwrt feeds 过时的openList2版本
+
+git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
+
 
 
