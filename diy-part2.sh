@@ -42,7 +42,8 @@ git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
 # 更新luci-app-wechatpush版本
 git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
 
-
+# 添加wrtbwmon依赖
+git clone https://github.com/brvphoenix/wrtbwmon.git package/wrtbwmon
 
 # 更新Syncthing
 LATEST=$(curl -s https://api.github.com/repos/syncthing/syncthing/releases/latest | jq -r '.tag_name' | sed 's/^v//')
