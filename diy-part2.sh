@@ -46,9 +46,7 @@ git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatp
 
 # 更新Syncthing
 # 1. 获取 Syncthing 最新版本号
-LATEST=$(curl -s https://api.github.com/repos/syncthing/syncthing/releases/latest \
-  | grep '"tag_name":' \
-  | sed -E 's/.*"v?([^"]+)".*/\1/')
+LATEST=$(curl -s https://api.github.com/repos/syncthing/syncthing/releases/latest | grep '"tag_name":' | sed -E 's/.*"v?([^"]+)".*/\1/')
 
 # 2. OpenWrt syncthing Makefile 路径
 MAKEFILE="feeds/packages/utils/syncthing"
