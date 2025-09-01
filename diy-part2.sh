@@ -39,6 +39,11 @@ git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
 # 更新openList2版本
 git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
 
+# 更新luci-app-wechatpush版本
+git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
+
+
+
 # 更新Syncthing
 # 1. 获取 Syncthing 最新版本号
 LATEST=$(curl -s https://api.github.com/repos/syncthing/syncthing/releases/latest \
