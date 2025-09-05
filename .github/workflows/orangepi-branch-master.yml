@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder (immortalwrt - OrangeaPiZero)
+name: OpenWrt Builder (OrangeaPiZero Branch master)
 
 on:
   repository_dispatch:
