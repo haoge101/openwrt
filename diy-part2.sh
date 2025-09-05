@@ -20,36 +20,6 @@
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 # Update golang version
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
-
-# Update luci-app-passwall
-# 移除 openwrt feeds 自带的核心库
-#rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview,shadow-tls}
-#git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
-
-# 移除 openwrt feeds 过时的luci-app-passwall版本
-#rm -rf feeds/luci/applications/luci-app-passwall
-#git clone https://github.com/xiaorouji/openwrt-passwall package/passwall-luci
-
-# 移除 openwrt feeds 过时的luci-app-diskman版本
-#rm -rf feeds/luci/applications/luci-app-diskman
-#git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
-
-# 更新openList2版本
-#git clone https://github.com/sbwml/luci-app-openlist2 package/openlist
-
-# 更新luci-app-wechatpush版本
-#git clone https://github.com/tty228/luci-app-wechatpush package/luci-app-wechatpush
-
-# 添加wrtbwmon依赖
-#git clone https://github.com/brvphoenix/wrtbwmon.git package/wrtbwmon
-
-# 更新Syncthing
-#LATEST=$(curl -s https://api.github.com/repos/syncthing/syncthing/releases/latest | jq -r '.tag_name' | sed 's/^v//')
-#echo "Latest version: $LATEST"
-#sed -i -E "s/^[[:space:]]*PKG_VERSION:=.*/PKG_VERSION:=$LATEST/" feeds/packages/utils/syncthing/Makefile
-#grep PKG_VERSION feeds/packages/utils/syncthing/Makefile
-
-
+#rm -rf feeds/packages/lang/golang
+#git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
 
